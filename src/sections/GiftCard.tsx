@@ -54,10 +54,9 @@ export default function GiftCard() {
               className="relative w-full max-w-lg aspect-square lg:aspect-auto lg:h-[450px] overflow-hidden"
             >
               {/* Classic marble bust wearing drapes */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=800&auto=format&fit=crop"
-                alt="Classical Sculpture Portrait draped in luxury colors"
+                src="/images/gift_card.png"
+                alt="Premium Foil Embossed Gift Voucher"
                 className="w-full h-full object-cover filter contrast-[1.05] brightness-[0.95]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#EBEBEB]/40 via-transparent to-transparent pointer-events-none" />

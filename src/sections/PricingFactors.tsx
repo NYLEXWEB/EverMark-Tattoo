@@ -32,9 +32,16 @@ export default function PricingFactors() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 md:mb-20">
-          <span className="text-xs uppercase tracking-[0.3em] font-bold text-accent mb-4 block">
-            // TRANSPARENT VALUES
-          </span>
+          <div className="flex items-center space-x-2.5 mb-4">
+            <img 
+              src="/EverMArk-logo.png" 
+              alt="EVERMARK Brand Icon" 
+              className="h-5 w-auto object-contain filter drop-shadow(0px 1px 2px rgba(0,0,0,0.5))"
+            />
+            <span className="text-xs uppercase tracking-[0.3em] font-bold text-accent block">
+              TRANSPARENT VALUES
+            </span>
+          </div>
           <h2 className="font-display font-black text-4xl md:text-6xl uppercase tracking-tight leading-none text-black">
             What Affects <br />
             <span className="text-transparent" style={{ WebkitTextStroke: "1px #000" }}>The Tattoo</span> Pricing?

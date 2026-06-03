@@ -46,12 +46,19 @@ export default function WhyChoose() {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
-          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent mb-4 block">
-            // UNCOMPROMISING STANDARDS
-          </span>
+          <div className="flex items-center space-x-2.5 mb-4">
+            <img 
+              src="/EverMArk-logo.png" 
+              alt="EVERMARK Brand Icon" 
+              className="h-5 w-auto object-contain filter drop-shadow(0px 1px 2px rgba(0,0,0,0.5))"
+            />
+            <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent block">
+              UNCOMPROMISING STANDARDS
+            </span>
+          </div>
           <h2 className="font-display font-bold text-4xl md:text-6xl uppercase tracking-tight text-white leading-none">
             Why Choose <br />
-            <span className="text-stroke">Evermark</span> Studio
+            <span className="evermark-logo-style text-4xl md:text-6xl leading-none">Evermark</span> Studio
           </h2>
         </div>
 

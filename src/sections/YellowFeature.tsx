@@ -53,11 +53,10 @@ export default function YellowFeature() {
               className="relative w-full max-w-lg aspect-square lg:aspect-auto lg:h-[450px] overflow-hidden"
             >
               {/* Torn paper texture collage frame */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=800&auto=format&fit=crop"
-                alt="Luxury Classic Sculpture Collage"
-                className="w-full h-full object-cover filter contrast-[1.1] brightness-[0.9] mix-blend-multiply"
+                src="/images/pay_later.png"
+                alt="Luxury Tattoo Machine & Artwork Design"
+                className="w-full h-full object-cover filter contrast-[1.05] brightness-[0.95]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#E5D21F]/40 via-transparent to-transparent pointer-events-none" />
             </motion.div>

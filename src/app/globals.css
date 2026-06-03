@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=Cinzel:wght@700;800;900&display=swap');
 
 @import "tailwindcss";
 
@@ -6,6 +6,7 @@
 @theme {
   --font-sans: 'Inter', sans-serif;
   --font-display: 'Space Grotesk', sans-serif;
+  --font-cinzel: var(--font-cinzel), 'Cinzel', serif;
   --color-accent: #C7A26A;
   --color-accent-hover: #B58F58;
   --color-bg-dark: #111111;
@@ -69,4 +70,44 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                     linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 40px 40px;
+}
+
+/* Metallic 3D Chiseled Gold text style - Exact match for the requested logo style */
+.evermark-logo-style {
+  font-family: var(--font-cinzel), 'Cinzel', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #FFF7D6 15%,
+    #EAA816 42%,
+    #6B3800 48%,
+    #FFF2A3 52%,
+    #F1AF15 82%,
+    #532900 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  
+  /* Reflective metallic edge stroke */
+  -webkit-text-stroke: 0.5px rgba(255, 240, 160, 0.55);
+  
+  /* 3D and depth drop shadows */
+  filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.95))
+          drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5))
+          drop-shadow(0px 0px 8px rgba(254, 211, 48, 0.1));
+  
+  letter-spacing: 0.04em;
+  display: inline-block;
+  
+  transition: all 0.3s ease;
+}
+
+.evermark-logo-style:hover {
+  filter: drop-shadow(0px 2px 2px rgba(255, 215, 0, 0.25))
+          drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.9))
+          drop-shadow(0px 0px 12px rgba(254, 211, 48, 0.2));
 }

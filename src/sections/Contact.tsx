@@ -37,9 +37,16 @@ export default function Contact() {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
-          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent mb-4 block">
-            // LOCATION & CONTACT
-          </span>
+          <div className="flex items-center space-x-2.5 mb-4">
+            <img 
+              src="/EverMArk-logo.png" 
+              alt="EVERMARK Brand Icon" 
+              className="h-5 w-auto object-contain filter drop-shadow(0px 1px 2px rgba(0,0,0,0.5))"
+            />
+            <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent block">
+              LOCATION & CONTACT
+            </span>
+          </div>
           <h2 className="font-display font-bold text-4xl md:text-6xl uppercase tracking-tight text-white leading-none">
             Get In <br />
             <span className="text-stroke">Touch</span> With Us
@@ -51,9 +58,16 @@ export default function Contact() {
           <div className="lg:col-span-6 flex flex-col justify-between">
             <div>
               {/* Studio Title */}
-              <h3 className="font-display font-bold text-2xl uppercase tracking-wide text-white mb-2">
-                EVERMARK STUDIO
-              </h3>
+              <div className="flex items-center space-x-3 mb-3">
+                <img 
+                  src="/EverMArk-logo.png" 
+                  alt="EVERMARK Logo" 
+                  className="h-10 w-auto object-contain"
+                />
+                <h3 className="evermark-logo-style text-2xl md:text-3xl leading-none">
+                  EVERMARK STUDIO
+                </h3>
+              </div>
               <p className="text-xs uppercase tracking-[0.2em] text-accent font-semibold mb-8">
                 Tattoo &bull; Piercing &bull; Grooming &bull; Wellness
               </p>

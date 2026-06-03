@@ -10,28 +10,28 @@ export default function TattooExamples() {
       badge: "Starting Consultation Available",
       price: "Starting from ₹5,000",
       description: "Fine-line work, minimalist scripts, and discrete visual accents crafted with micro-needle precision.",
-      image: "https://images.unsplash.com/photo-1542382156909-9ae37b3f56fd?q=80&w=800&auto=format&fit=crop",
+      image: "/images/SAVE_20260603_113750.jpg",
     },
     {
       title: "Medium Tattoos",
       badge: "Custom Pricing",
       price: "Starting from ₹10,000",
       description: "Detailed forearm concepts, intricate floral sprays, and multi-session geometric patterns.",
-      image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=800&auto=format&fit=crop",
+      image: "/images/SAVE_20260603_113726.jpg",
     },
     {
       title: "Large Tattoos",
       badge: "Premium Artwork",
       price: "Starting from ₹35,000",
       description: "High-concept back pieces, expansive chest canvases, and complete arm or leg sleeves.",
-      image: "https://images.unsplash.com/photo-1560707303-4e980c876ad2?q=80&w=800&auto=format&fit=crop",
+      image: "/images/SAVE_20260603_113654.jpg",
     },
     {
       title: "Geometric Tattoos",
       badge: "Custom Design Available",
       price: "Starting from ₹20,000",
       description: "Mathematical symmetry, dotwork shading, and intricate sacred geometry aligned to anatomical contours.",
-      image: "https://images.unsplash.com/photo-1590246814883-57a511fbc9f2?q=80&w=800&auto=format&fit=crop",
+      image: "/images/SAVE_20260603_113720.jpg",
     },
   ];
 
@@ -43,9 +43,16 @@ export default function TattooExamples() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
-          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent mb-4 block">
-            // ARTISTIC CANVASES
-          </span>
+          <div className="flex items-center space-x-2.5 mb-4">
+            <img 
+              src="/EverMArk-logo.png" 
+              alt="EVERMARK Brand Icon" 
+              className="h-5 w-auto object-contain filter drop-shadow(0px 1px 2px rgba(0,0,0,0.5))"
+            />
+            <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent block">
+              ARTISTIC CANVASES
+            </span>
+          </div>
           <h2 className="font-display font-bold text-4xl md:text-6xl uppercase tracking-tight text-white leading-none">
             Tattoo <br />
             <span className="text-stroke">Scale &amp;</span> Categories
@@ -103,11 +110,10 @@ export default function TattooExamples() {
               {/* Cinematic Image Block (Right Side) */}
               <div className="w-full lg:w-[55%] relative min-h-[300px] lg:min-h-auto overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#E5E5E5]/25 via-transparent to-transparent z-10 pointer-events-none" />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover min-h-[350px] lg:min-h-[450px] transition-transform duration-700 hover:scale-105 filter grayscale contrast-105"
+                  className="w-full h-full object-cover min-h-[350px] lg:min-h-[450px] transition-transform duration-700 hover:scale-105"
                 />
               </div>
             </motion.div>

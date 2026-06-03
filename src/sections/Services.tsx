@@ -9,7 +9,7 @@ export default function Services() {
       id: "01",
       icon: <Sparkles className="w-6 h-6 text-accent" />,
       title: "ALL TYPE OF TATTOOS",
-      image: "https://images.unsplash.com/photo-1590246814883-57a511fbc9f2?q=80&w=800&auto=format&fit=crop",
+      image: "/images/SAVE_20260603_113744.jpg",
       description: "Custom experiences crafted by professional artists representing diverse modern and traditional styles.",
       items: [
         "Portrait Tattoos",
@@ -61,9 +61,16 @@ export default function Services() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24">
           <div className="max-w-2xl">
-            <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent mb-4 block">
-              // STUDIO OFFERINGS
-            </span>
+            <div className="flex items-center space-x-2.5 mb-4">
+              <img 
+                src="/EverMArk-logo.png" 
+                alt="EVERMARK Brand Icon" 
+                className="h-5 w-auto object-contain filter drop-shadow(0px 1px 2px rgba(0,0,0,0.5))"
+              />
+              <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent block">
+                STUDIO OFFERINGS
+              </span>
+            </div>
             <h2 className="font-display font-bold text-4xl md:text-6xl uppercase tracking-tight text-white leading-none">
               Services <br />
               <span className="text-stroke">Crafted for</span> You

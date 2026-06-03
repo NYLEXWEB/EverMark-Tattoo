@@ -26,6 +26,20 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full pt-24 relative z-20">
         <div className="max-w-4xl flex flex-col items-start text-left">
+          {/* Logo Icon */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.05 }}
+            className="mb-6"
+          >
+            <img 
+              src="/EverMArk-logo.png" 
+              alt="EVERMARK Crown Logo" 
+              className="h-16 md:h-20 w-auto object-contain filter drop-shadow(0px 4px 12px rgba(254, 211, 48, 0.25))"
+            />
+          </motion.div>
+
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

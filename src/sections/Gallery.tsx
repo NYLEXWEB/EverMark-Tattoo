@@ -13,59 +13,59 @@ export default function Gallery() {
   const items = [
     {
       id: "gal-1",
-      src: "https://images.unsplash.com/photo-1560707303-4e980c876ad2?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113654.jpg",
       category: "REALISM",
       span: "md:col-span-2 md:row-span-2",
-      title: "Ornate Sleeve Art",
+      title: "Mahabharata Sleeve Art",
     },
     {
       id: "gal-2",
-      src: "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113702.jpg",
       category: "BLACKWORK",
       span: "md:col-span-1 md:row-span-1",
-      title: "Filigree Back Piece",
+      title: "Filigree Concept",
     },
     {
       id: "gal-3",
-      src: "https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113708.jpg",
       category: "BLACKWORK",
       span: "md:col-span-1 md:row-span-2",
       title: "Hand Craft Tattooing",
     },
     {
       id: "gal-4",
-      src: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113714.jpg",
       category: "GEOMETRIC",
       span: "md:col-span-1 md:row-span-1",
-      title: "Mandala Forearm",
+      title: "Symmetrical Mandala",
     },
     {
       id: "gal-5",
-      src: "https://images.unsplash.com/photo-1590246814883-57a511fbc9f2?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113720.jpg",
       category: "GEOMETRIC",
       span: "md:col-span-2 md:row-span-1",
-      title: "Symmetrical Pattern",
+      title: "Geometric Alignment",
     },
     {
       id: "gal-6",
-      src: "https://images.unsplash.com/photo-1542382156909-9ae37b3f56fd?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113726.jpg",
       category: "MINIMALIST",
       span: "md:col-span-1 md:row-span-2",
-      title: "Delicate Wrist Icon",
+      title: "Trishul & Damru Tattoo",
     },
     {
       id: "gal-7",
-      src: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113732.jpg",
       category: "BLACKWORK",
       span: "md:col-span-1 md:row-span-1",
-      title: "Symmetrical Mandalas",
+      title: "Custom Mandalas",
     },
     {
       id: "gal-8",
-      src: "https://images.unsplash.com/photo-1601379327928-3f59a700ec90?q=80&w=800&auto=format&fit=crop",
+      src: "/images/SAVE_20260603_113738.jpg",
       category: "MINIMALIST",
       span: "md:col-span-1 md:row-span-1",
-      title: "Fine-Line Portraiture",
+      title: "Fine-Line Custom piece",
     },
   ];
 
@@ -81,9 +81,16 @@ export default function Gallery() {
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16">
           <div>
-            <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent mb-4 block">
-              // VISUAL CURATION
-            </span>
+            <div className="flex items-center space-x-2.5 mb-4">
+              <img 
+                src="/EverMArk-logo.png" 
+                alt="EVERMARK Brand Icon" 
+                className="h-5 w-auto object-contain filter drop-shadow(0px 1px 2px rgba(0,0,0,0.5))"
+              />
+              <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent block">
+                VISUAL CURATION
+              </span>
+            </div>
             <h2 className="font-display font-bold text-4xl md:text-6xl uppercase tracking-tight text-white leading-none">
               Tattoo <br />
               <span className="text-stroke">Gallery</span>
@@ -143,11 +150,10 @@ export default function Gallery() {
                   </h3>
                 </div>
 
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={img.src}
                   alt={img.title}
-                  className="w-full h-full object-cover filter grayscale contrast-105 transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </motion.div>
             ))}

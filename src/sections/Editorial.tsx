@@ -10,7 +10,7 @@ export default function Editorial() {
       <div
         className="absolute right-0 top-0 w-full lg:w-1/2 h-full bg-cover bg-center bg-no-repeat z-0"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?q=80&w=1200&auto=format&fit=crop')`,
+          backgroundImage: `url('/images/SAVE_20260603_113732.jpg')`,
         }}
       />
       

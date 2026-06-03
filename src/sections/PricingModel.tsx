@@ -48,9 +48,16 @@ export default function PricingModel() {
               transition={{ duration: 0.8 }}
               className="max-w-xs"
             >
-              <span className="text-[10px] uppercase tracking-[0.3em] font-extrabold text-[#C7A26A] mb-4 block">
-                // TRANSPARENT STANDARDS
-              </span>
+              <div className="flex items-center space-x-2.5 mb-4">
+                <img 
+                  src="/EverMArk-logo.png" 
+                  alt="EVERMARK Brand Icon" 
+                  className="h-5 w-auto object-contain filter drop-shadow(0px 1px 2px rgba(0,0,0,0.5))"
+                />
+                <span className="text-[10px] uppercase tracking-[0.3em] font-extrabold text-[#C7A26A] block">
+                  TRANSPARENT STANDARDS
+                </span>
+              </div>
               <h2 className="font-display font-black text-3xl md:text-5xl uppercase tracking-tight leading-[0.95] text-black">
                 What is the <br />
                 industry <br />

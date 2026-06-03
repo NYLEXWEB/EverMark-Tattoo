@@ -35,13 +35,20 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              <a href="#home" className="flex flex-col select-none mb-6 w-fit">
-                <span className="font-display font-extrabold text-3xl tracking-[0.15em] text-white">
-                  EVERMARK
-                </span>
-                <span className="text-[8px] tracking-[0.4em] text-accent uppercase -mt-0.5 font-sans font-medium">
-                  Tattoo &amp; Makeover Studio
-                </span>
+              <a href="#home" className="flex items-center space-x-3 select-none mb-6 w-fit group">
+                <img 
+                  src="/EverMArk-logo.png" 
+                  alt="EVERMARK Logo" 
+                  className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="flex flex-col">
+                  <span className="evermark-logo-style text-2xl md:text-3xl leading-none">
+                    EVERMARK
+                  </span>
+                  <span className="text-[7.5px] tracking-[0.43em] text-accent uppercase mt-1.5 font-sans font-medium transition-colors duration-300 group-hover:text-white">
+                    Tattoo &amp; Makeover Studio
+                  </span>
+                </div>
               </a>
               <p className="text-sm font-light text-muted-text max-w-sm leading-relaxed mb-8">
                 Kerala&apos;s luxury destination for high-end custom tattoos, precise body piercings, and premium gentleman makeover treatments. Experience art on your terms.
